@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- 导入校验文件 -->
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "mybatis-3-mapper.dtd">
+<!-- 映射配置 -->
+<mapper namespace="com.mybatis.dao.TeacherMapper">
+	<select id="findOne" parameterType="int" resultType="Teacher">
+		select * from teacher where uuid = #{uuid};
+	</select>
+</mapper>
